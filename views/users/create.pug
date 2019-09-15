@@ -9,12 +9,17 @@ block content
                 h1 Create user
         .row
             .col
+                if errors
+                    each error in errors
+                        .alert.alert-danger= error
+        .row
+            .col
                 form(action='/users/create',method="POST")
                     .form-group
                         label(for="name") Name
-                        input#name.form-control(type='text', name='name', placeholder='Name')
+                        input#name.form-control(type='text', name='name', placeholder='Name', value=values?values.name:'') 
                     .form-group
                         label(for="phone") Phone number
-                        input#phone.form-control(type='text', name='phone', placeholder='Phone number')
+                        input#phone.form-control(type='text', name='phone', placeholder='Phone number', value=values?values.phone:'')
                     button.btn.btn-primary(type='submit') Create
 
