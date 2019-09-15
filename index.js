@@ -13,8 +13,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true}));
 
 app.use('/users', userRoute);
+app.use(express.static('public'));
 
-// render index
 app.get('/', function (req, res) {
     res.send('Hello World!');
 });
