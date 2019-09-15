@@ -1,10 +1,20 @@
 extends ../layouts/common.pug
 
 block content
-    h1 Create User
+    
 
-    form(action='/users/create',method="POST")
-        label Name
-        input(name="name",type="text")
+    .container
+        .row
+            .col
+                h1 Create user
+        .row
+            .col
+                form(action='/users/create',method="POST")
+                    .form-group
+                        label(for="name") Name
+                        input#name.form-control(type='text', name='name', placeholder='Name')
+                    .form-group
+                        label(for="phone") Phone number
+                        input#phone.form-control(type='text', name='phone', placeholder='Phone number')
+                    button.btn.btn-primary(type='submit') Create
 
-        button Create
