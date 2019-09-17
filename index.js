@@ -1,3 +1,6 @@
+require('dotenv').config();
+console.log(process.env.SESSION_SECRET);
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
@@ -15,7 +18,7 @@ app.set('views', './views');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true}));
-app.use(cookieParser('storytellar-hash'));
+app.use(cookieParser(process.env.SESSION_SECRET));
 
 app.use(express.static('public'));
 
