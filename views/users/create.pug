@@ -14,12 +14,15 @@ block content
                         .alert.alert-danger= error
         .row
             .col
-                form(action='/users/create',method="POST")
+                form(action='/users/create',method="POST", enctype="multipart/form-data")
                     .form-group
                         label(for="name") Name
                         input#name.form-control(type='text', name='name', placeholder='Name', value=values?values.name:'') 
                     .form-group
                         label(for="phone") Phone number
                         input#phone.form-control(type='text', name='phone', placeholder='Phone number', value=values?values.phone:'')
+                    .form-group
+                        label(for="avatar") Name
+                        input#avatar.form-control-file(type='file', name='avatar') 
                     button.btn.btn-primary(type='submit') Create
 

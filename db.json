@@ -1,51 +1,17 @@
 {
   "users": [
     {
-      "name": "Nguyễn Quốc Anh",
-      "id": "D_Ch4Cw"
-    },
-    {
-      "name": "Trịnh Nhật Tân",
-      "id": "G-fFtdr"
-    },
-    {
-      "name": "Cao Đình Vĩ",
-      "id": "DJNuMVJ"
-    },
-    {
-      "name": "Phạm Quốc Nhật Tường",
-      "id": "-vzYfom"
-    },
-    {
-      "name": "Lê Ngọc Hải Yến",
-      "id": "5YJpms8"
-    },
-    {
-      "name": "Lữ Phương Anh",
-      "id": "7wmuzJm"
-    },
-    {
-      "name": "Cao Trọng Tín",
-      "id": "-yJh7DE"
-    },
-    {
-      "name": "Phạm Hải Băng",
-      "id": "luWxPea"
-    },
-    {
-      "name": "Phạm Vũ Đình Thắng",
-      "id": "6GjNjMZ"
-    },
-    {
       "name": "Lê Hồng Thái",
       "id": "sACLY1K",
       "email": "admin@localhost",
-      "password": "123456"
+      "password": "123456",
+      "avatar": "uploads/9712d5091925925eb990668b4e5b7516"
     },
     {
-      "name": "Hoàng Luân",
-      "phone": "123456",
-      "id": "5Jlm0T6"
+      "name": "Nguyễn Văn Linh",
+      "phone": "0981273823",
+      "id": "wHUZnZN",
+      "avatar": "uploads/9712d5091925925eb990668b4e5b7516"
     }
   ]
 }
