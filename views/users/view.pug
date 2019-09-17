@@ -1,10 +1,23 @@
 extends ../layouts/common.pug
 
 block content
-    h1 VIEW USER
-    p
-        b Name &nbsp;
-        span= user.name
-        br
-        b Phone &nbsp;
-        span= user.phone
+    .container
+        .row
+            .col(class="d-flex flex-column justify-content-center align-items-center", style="height: 500px;")
+                h1 VIEW INFORMATION
+                p
+                    b Name &nbsp;
+                    span= user.name
+                    br
+
+                    b Phone &nbsp;
+                    span= user.phone
+                    br
+
+                    b Email &nbsp;
+                    span= user.email
+                    br
+
+                    b Password &nbsp;
+                    span= user.password
+                    br
