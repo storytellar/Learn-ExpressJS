@@ -1,7 +1,9 @@
 const db = require('../db');
 
 module.exports.login = function (req, res) {
-    res.render('auth/login');
+    res.render('auth/login', {
+        csrfToken: req.csrfToken()
+    });
 };
 
 module.exports.postLogin = function (req, res) {
