@@ -26,6 +26,6 @@ module.exports.postLogin = function (req, res) {
         });
     }
     
-    res.cookie('userId', user.id);
+    res.cookie('userId', user.id, { signed: true, expires: new Date(Date.now() + 900000) });
     res.redirect('/users');
 };
